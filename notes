@@ -1,0 +1,4 @@
+QUESTION 4:
+SQL [4]> SELECT models.name,models.brand_name, brands.headquarters FROM brands INNER JOIN models ON brands.id=models.id WHERE name='Mustang';
+
+
