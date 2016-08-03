@@ -70,6 +70,30 @@ SELECT brand_name, name FROM models WHERE year = 1964;
 
 
 ==========
+4
+
+-----
+
+Select the model name, brand name, and headquarters for 
+the Ford Mustang from the models and brands tables.
+
+The result set should be:
+  name   | brand_name | headquarters
+---------+------------+--------------
+ Mustang | Ford       | Dearborn, MI
+ (1 rows)
+
+
+-----
+
+
+SELECT Models.name, Models.brand_name, Brands.headquarters 
+FROM Models JOIN Brands 
+ON Models.brand_name=Brands.name
+WHERE Models.brand_name='Ford' AND Models.name='Mustang';
+
+
+==========
 5
 
 -----
